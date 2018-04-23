@@ -1,0 +1,99 @@
+# this file goes in ~
+
+
+background yes
+use_xft yes
+xftfont monospace:pixelsize=11
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+stippled_borders 0
+border_margin 4
+border_width 0
+default_color cyan
+default_shade_color black
+default_outline_color white
+alignment top_left
+gap_x 1040
+gap_y 15
+no_buffers yes
+cpu_avg_samples 2
+net_avg_samples 2
+override_utf8_locale yes
+use_spacer yes
+
+maximum_width 350
+
+#color1 DC143C
+color1 cyan
+color2 DC143C
+
+TEXT
+#leet chars: ┤┤└└┴┴┐┐││┘┘┌┌├├┬┬┼┼┴┴── ││ ▽▼△▲▵▴▾▿
+${alignr}${offset -60}${voffset -10}${font DejaVu Sans:pixelsize=30}${color2}hax${color}OS${font} 
+${alignr}${offset -91}▲   
+${alignr}${offset 7}└─────────────┐   
+${alignr}$font │  
+${alignr}$font ${nodename} -─┤  
+${alignr}$font ${color1}${color1}[${color}${color} ${exec uname -r | cut -c 1-14} ${color1}]${color} kernel -─┤    │  
+${alignr}$font ${color1}[${color} $machine ${color1}]${color}   arch -─┤    │  
+${alignr}$font ${color1}[${color} $uptime ${color1}]${color} uptime -─┘    │  
+${alignr}$font ${color1}[${color} ${battery BAT0} ${color1}]${color} battery -─┘    │  
+${alignr}$font │  
+${alignr}$font system -${color1}─┤${color}  
+${alignr}$font cpu -─┤    │  
+${alignr}$font used -─┤    │    │  
+${alignr}${color2}[${cpu 1}%]${color} CPU1 ${color2}[${color}${color2}${cpu 2}%]${color} CPU2 -─┤    │    │    │  
+${alignr}$font ${color2}[${cpu 3}%]${color} CPU3 ${color2}[${color}${color2}${cpu 4}%]${color} CPU4 -─┘    │    │    │  
+${alignr}$font freq -─┤    │    │  
+${alignr}$font ${color1}[${color} ${freq 1}mhz ${color1}]${color} cpu1 -─┤    │    │    │  
+${alignr}$font ${color1}[${color} ${freq 2}mhz ${color1}]${color} cpu2 -─┘    │    │    │  
+${alignr}$font ${color1}[${color} $loadavg ${color1}]${color} load -─┤    │    │  
+${alignr}$font ${color2}[${color} ${top name 1}  ${top cpu 1} ${color2}]${color} -─┤    │    │  
+${alignr}$font ${color2}[${color} ${top name 2}  ${top cpu 2} ${color2}]${color} -─┤    │    │  
+${alignr}$font ${color2}[${color} ${top name 3}  ${top cpu 3} ${color2}]${color} -─┤    │    │  
+${alignr}$font ${color2}[${color} ${top name 4}  ${top cpu 4} ${color2}]${color} -─┤    │    │  
+${alignr}$font ${color2}[${color} ${top name 5}  ${top cpu 5} ${color2}]${color} -─┘    │    │  
+${alignr}$font processes -─┤    │  
+${alignr}$font ${color1}[${color} $processes ${color1}]${color}   total -─┤    │    │  
+${alignr}$font ${color1}[${color} $running_processes ${color1}]${color} running -─┘    │    │  
+${alignr}$font temperature -─┘    │  
+${alignr}$font ${color1}[${color} ${exec sensors | grep -m 1 temp1 | cut -c 16-17} ${color1}]${color} tmp1 -─┘         │  
+#${alignr}$font ${color1}[${color} ${if_match ${exec sensors | grep -m 1 temp1 | awk '{print $2}' | cut -c 2-3}>=65}${color2}${exec sensors | grep -m 1 temp1 | awk '{print $2}' | cut -c 2-3}${else}${color1}${exec sensors | grep -m 1 temp1 | awk '{print $2}' | cut -c 2-3}${endif}${color}${color} ${color1}]${color} tmp1 -─┘         │  
+${alignr}$font │  
+${alignr}$font resources -─┤  
+${alignr}$font ${color1}[${color} $diskio_read ${color1}]${color}  read -─┤    │  
+${alignr}$font ${color1}[${color} $diskio_write ${color1}]${color} write -─┤    │  
+${alignr}$font ram -─┤    │  
+${alignr}$font ${color1}[${color} $memperc% ${color1}]${color} used -─┤    │    │  
+${alignr}$font ${color1}[${color} $mem/$memmax ${color1}]${color} -─┘    │    │    │  
+${alignr}$font ${color2}[${color} ${top_mem name 1}  ${top_mem mem 1} ${color2}]${color} -─┤    │    │  
+${alignr}$font ${color2}[${color} ${top_mem name 2}  ${top_mem mem 2} ${color2}]${color} -─┤    │    │  
+${alignr}$font ${color2}[${color} ${top_mem name 3}  ${top_mem mem 3} ${color2}]${color} -─┤    │    │  
+${alignr}$font ${color2}[${color} ${top_mem name 4}  ${top_mem mem 4} ${color2}]${color} -─┤    │    │  
+${alignr}$font ${color2}[${color} ${top_mem name 5}  ${top_mem mem 5} ${color2}]${color} -─┘    │    │  
+${alignr}$font ${color1}[${color} $swapperc% - $swap/$swapmax ${color1}]${color} swap -─┤    │  
+${alignr}$font ${color1}[${color} ${swapbar 5,120} ${color1}]${color} -─┘    │    │  
+${alignr}$font ${color1}[${color} ${fs_used /}/${fs_size /} ${color1}]${color} root -─┤    │  
+${alignr}$font ${color1}[${color} ${fs_bar 5,120 /} ${color1}]${color} -─┘    │    │  
+${alignr}$font ${color1}[${color} ${fs_used /home}/${fs_size /home} ${color1}]${color} home -─┤    │  
+${alignr}$font ${color1}[${color} ${fs_bar 5,120 /home/$USER/} ${color1}]${color} -─┘    │    │  
+#${alignr}$font ${color1}[${color} ${fs_used /usr/local}/${fs_size /usr/local} ${color1}]${color} local -─┘    │  
+#${alignr}$font ${color1}[${color} ${fs_bar 5,120 /home/Container/} ${color1}]${color} -─┘         │  
+${alignr}$font │  
+${alignr}$font net -─┘  
+${alignr}$font ${color1}[${color} ${tcp_portmon 1 65535 count} ${color1}]${color} connections -─┤       
+${alignr}$font ${color1}[${color} ${tcp_portmon 1 32767 count} ${color1}]${color} in / locale -─┤       
+${alignr}$font ${color1}[${color} ${tcp_portmon 32768 61000 count} ${color1}]${color} out / remote -─┤       
+${alignr}$font ${color1}[${color} ${upspeed wlp7s0} k/s ${color1}]${color}   up -─┤       
+${alignr}$font ${color1}${color} ${upspeedgraph wlp7s0 8,120 DC143C DC143C} ${color1}${color} -─┘    │       
+${alignr}$font ${color1}[${color} ${downspeed wlp7s0} k/s ${color1}]${color} down -─┘       
+${alignr}$font ${color1}${color} ${downspeedgraph wlp7s0 8,120 DC143C DC143C} ${color1}${color} -─┘            
