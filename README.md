@@ -15,10 +15,11 @@ If you are using Ubuntu or its other derivatives you can install it from the Lau
 - 14.10 (utopic)
 
 To install from PPA, type the following commands one by one in a terminal window:
-
-`sudo apt-add-repository -y ppa:teejee2008/ppa`
-`sudo apt-get update`
-`sudo apt-get install conky-manager`
+```
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt-get update`
+sudo apt-get install conky-manager
+```
 
 Updates will be installed automatically if you have enabled automatic updates enabled on your system. The package can also be updated manually by running the install command again.
 
