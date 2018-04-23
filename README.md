@@ -22,7 +22,7 @@ To install from PPA, type the following commands one by one in a terminal window
 
 Updates will be installed automatically if you have enabled automatic updates enabled on your system. The package can also be updated manually by running the install command again.
 
-Now that you're done with the installations, the next thing you want to do is to download the ![Iron Main Wallpaper](https://www.dropbox.com/s/svjngjpbncf60hr/iron-man.zip?dl=0) and set it as your Desktop Photo.
+Now that you're done with the installations, the next thing you want to do is to download the ![Iron Main Wallpaper](https://raw.githubusercontent.com/naumanafsar/jarvis-live-wallpaper/master/imgs/iron-man.jpg) and set it as your Desktop Photo.
 
 Now go to the *src* Directory and copy the *conkyrc* file and paste it in your *.conky* directory!
 Now open *Conky Manager* and select the *conkyrc* file, Enjoy :)
