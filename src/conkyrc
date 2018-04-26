@@ -38,7 +38,7 @@ color2 DC143C
 
 TEXT
 #leet chars: ┤┤└└┴┴┐┐││┘┘┌┌├├┬┬┼┼┴┴── ││ ▽▼△▲▵▴▾▿
-${alignr}${offset -60}${voffset -10}${font DejaVu Sans:pixelsize=30}${color2}hax${color}OS${font} 
+${alignr}${offset -60}${voffset -10}${font DejaVu Sans:pixelsize=30}${color2}JARV${color}IS${font} 
 ${alignr}${offset -91}▲   
 ${alignr}${offset 7}└─────────────┐   
 ${alignr}$font │  
